@@ -11,7 +11,7 @@ function App() {
   const [token,setToken]=useState("")
   useMemo(()=>{
 setToken(localStorage.getItem("token"))
-  },[])
+  },[token])
 
   return (
     <div><ToastContainer/>

@@ -7,6 +7,7 @@ function LOginSucces({setToken}) {
   const navigate = useNavigate();
 
   const Logout=async()=>{
+    localStorage.removeItem("token");
     setToken("")
     navigate("/")
   }
